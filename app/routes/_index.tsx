@@ -14,7 +14,7 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <ul>
         <Link
-          to="/todos"
+          to="/todo"
           style={{ textDecoration: "none", color: "inherit" }}
           className="link"
         >

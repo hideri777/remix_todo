@@ -20,14 +20,20 @@ export default function Todo() {
       <Link to="/">Homeへ</Link>
       <h1>Todo List</h1>
       <Link to="/todo/new">
-        <button>新規作成</button>
+        <button>新規作成index</button>
       </Link>
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
             <input type="checkbox" name="" id="" checked={todo.done} />
             <input type="text" name="" id="" value={todo.title} />
-            <button>削除</button>
+            <div>
+              <Link
+                to={`/todo/${todo.id}/edit`}>
+                編集
+              </Link>
+              <button>削除</button>
+            </div>
           </li>
         ))}
       </ul>
